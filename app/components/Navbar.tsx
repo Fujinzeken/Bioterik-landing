@@ -3,18 +3,21 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { useTheme } from "./ThemeProvider";
-
-const navLinks = [
-  { label: "Our Approach", href: "#approach" },
-  { label: "Premium Sources", href: "#indena" },
-  { label: "Products", href: "#products" },
-  { label: "Contact", href: "#contact" },
-];
+import { useTranslations } from "next-intl";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 export default function Navbar() {
+  const t = useTranslations("Navbar");
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const { theme, toggleTheme } = useTheme();
+
+  const navLinks = [
+    { label: t("approach"), href: "#approach" },
+    { label: t("sources"), href: "#indena" },
+    { label: t("products"), href: "#products" },
+    { label: t("contact"), href: "#contact" },
+  ];
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
@@ -79,11 +82,15 @@ export default function Navbar() {
 
         {/* Theme toggle + CTA + Mobile toggle */}
         <div className="flex items-center gap-5">
+          <div className="hidden sm:block">
+            <LanguageSwitcher />
+          </div>
+
           {/* Theme toggle button */}
           <button
             onClick={toggleTheme}
             className="flex h-9 w-9 items-center justify-center rounded-full border border-[var(--border-card)] bg-[var(--bg-card)] text-[var(--text-body)] transition-all duration-300 hover:border-[#10b981]/30 hover:text-[#10b981]"
-            aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
+            aria-label={theme === "dark" ? t("switchLight") : t("switchDark")}
           >
             {theme === "dark" ? (
               <svg
@@ -120,14 +127,14 @@ export default function Navbar() {
             href="mailto:info@bioterik-pharma.uz"
             className="hidden md:inline-flex rounded-full bg-linear-to-r from-[#10b981] to-[#14b8a6] px-7 py-2.5 text-[0.9rem] font-semibold text-white shadow-[0_0_25px_rgba(16,185,129,0.3)] transition-all duration-300 hover:shadow-[0_0_35px_rgba(16,185,129,0.5)] hover:scale-[1.03] active:scale-[0.98]"
           >
-            Get In Touch
+            {t("getInTouch")}
           </Link>
 
           {/* Hamburger */}
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
             className="relative flex h-10 w-10 flex-col items-center justify-center gap-1.5 md:hidden"
-            aria-label="Toggle menu"
+            aria-label={t("toggleMenu")}
           >
             <span
               className={`block h-[2px] w-6 rounded-full bg-[var(--icon-color)] transition-all duration-300 origin-center ${
@@ -158,7 +165,7 @@ export default function Navbar() {
           <button
             onClick={() => setMobileOpen(false)}
             className="flex h-10 w-10 items-center justify-center text-[var(--text-heading)] text-2xl"
-            aria-label="Close menu"
+            aria-label={t("closeMenu")}
           >
             ✕
           </button>
@@ -180,8 +187,11 @@ export default function Navbar() {
             onClick={() => setMobileOpen(false)}
             className="mt-6 rounded-full bg-linear-to-r from-[#10b981] to-[#14b8a6] px-10 py-4 text-lg font-semibold text-white shadow-[0_0_25px_rgba(16,185,129,0.3)]"
           >
-            Get In Touch
+            {t("getInTouch")}
           </Link>
+          <div className="mt-8">
+            <LanguageSwitcher />
+          </div>
         </div>
       </div>
     </nav>

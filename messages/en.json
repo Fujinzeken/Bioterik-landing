@@ -1,0 +1,221 @@
+{
+  "Metadata": {
+    "title": "BIOTERIK PHARMA | Pharmaceutical Supplements with Indena Ingredients",
+    "description": "Science-backed supplements with Indena ingredients. Products created by a team of pharmacists using standardized extracts of the highest pharmaceutical quality. Proven efficacy. Transparent formulas.",
+    "keywords": "pharmaceutical supplements, Indena ingredients, standardized extracts, BIOTERIK, pharmacist-formulated, bioavailability",
+    "ogTitle": "BIOTERIK PHARMA | Pharmaceutical Supplements with Indena Ingredients",
+    "ogDescription": "Science-backed supplements with Indena ingredients. Trusted by healthcare professionals."
+  },
+  "Navbar": {
+    "approach": "Our Approach",
+    "sources": "Premium Sources",
+    "products": "Products",
+    "contact": "Contact",
+    "getInTouch": "Get In Touch",
+    "switchLight": "Switch to light mode",
+    "switchDark": "Switch to dark mode",
+    "toggleMenu": "Toggle menu",
+    "closeMenu": "Close menu"
+  },
+  "Hero": {
+    "badge": "Pharmaceutical Precision in Every Capsule",
+    "headline": {
+      "pharmaceutical": "Pharmaceutical",
+      "approach": "Approach",
+      "to": " to",
+      "health": "Health"
+    },
+    "heritageLabel": "Indena Sourced · EU Standards",
+    "description": "Products created by a team of pharmacists using standardized extracts of the highest pharmaceutical quality. Proven efficacy. Transparent formulas.",
+    "explore": "Explore Products",
+    "contact": "Contact Us",
+    "statHeritage": {
+      "value": "100",
+      "label": "Years Heritage"
+    },
+    "statProducts": {
+      "value": "8",
+      "label": "Products"
+    },
+    "statCertified": {
+      "value": "EU",
+      "label": "Certified"
+    },
+    "scroll": "Scroll"
+  },
+  "Approach": {
+    "badge": "Our Philosophy",
+    "title": {
+      "science": "Science-Driven",
+      "supplementation": "Supplementation"
+    },
+    "description1": {
+      "text": "We are a pharmaceutical company dedicated to creating supplements that actually work. Every product is formulated with standardized, pharmaceutical-grade ingredients sourced directly from <indena>Indena</indena> — a trusted European manufacturer of standardized botanical extracts."
+    },
+    "description2": {
+      "text": "Unlike conventional supplement companies, our team consists of <pharmacists>qualified pharmacists</pharmacists> who understand pharmacokinetics, bioavailability, and clinical efficacy. We don't create products based on trends — we create them based on <research>research</research>."
+    },
+    "footer": "Scientific Research & Quality Assurance"
+  },
+  "Pillars": {
+    "badge": "What Sets Us Apart",
+    "title": "Our Pharmaceutical Approach",
+    "subtitle": "Four pillars that distinguish us from conventional supplement manufacturers",
+    "pillar1": {
+      "title": "Standardized Extracts",
+      "description": "Precisely quantified active compounds for consistent efficacy across every batch"
+    },
+    "pillar2": {
+      "title": "Scientific Foundation",
+      "description": "Every formulation is backed by peer-reviewed research and clinical data"
+    },
+    "pillar3": {
+      "title": "Optimal Bioavailability",
+      "description": "Enhanced absorption and utilization by the body for maximum therapeutic benefit"
+    },
+    "pillar4": {
+      "title": "Rigorous QA/QC",
+      "description": "Multiple testing stages ensure purity, potency, and safety at every step"
+    }
+  },
+  "Indena": {
+    "location": "Milan, Italy · Est. 1921",
+    "stats": {
+      "years": {
+        "value": "100",
+        "label": "Years"
+      },
+      "countries": {
+        "value": "80",
+        "label": "Countries"
+      },
+      "gmp": {
+        "value": "EU",
+        "label": "GMP"
+      }
+    },
+    "quote": "Global leader in standardized botanical extracts, setting the international standard for quality in plant-based pharmaceuticals.",
+    "badge": "Premium Sourcing",
+    "title": {
+      "worldClass": "World-Class Ingredients ",
+      "fromIndena": "from Indena"
+    },
+    "description": "Indena is a global leader in standardized botanical extracts. For over 100 years, they've set the international standard for quality in plant-based pharmaceuticals.",
+    "features": {
+      "compound": "Standardized to precise active compound specifications",
+      "standards": "European pharmaceutical manufacturing standards",
+      "purity": "Third-party tested for purity and potency",
+      "bioavailability": "Clinically documented bioavailability"
+    },
+    "note": "Every BIOTERIK product contains Indena-sourced ingredients. This is not negotiable. <bold>Quality is non-negotiable.</bold>"
+  },
+  "Products": {
+    "badge": "Product Catalog",
+    "title": "Our Product Line",
+    "subtitle": "Comprehensive formulations designed for specific health areas, each powered by Indena ingredients",
+    "labels": {
+      "active": "Active",
+      "dosage": "Dosage"
+    },
+    "catalog": {
+      "cardio": {
+        "name": "Cardio Naturalis",
+        "description": "Supports healthy cholesterol and blood pressure levels",
+        "active": "Standardized Hawthorn Extract"
+      },
+      "immunis": {
+        "name": "Immunis Pro",
+        "description": "Strengthens natural immune response",
+        "active": "Echinacea purpurea (standardized)"
+      },
+      "articular": {
+        "name": "Articular Plus",
+        "description": "Promotes joint flexibility and comfort",
+        "active": "Boswellia serrata extract"
+      },
+      "neuro": {
+        "name": "Neuro Clarity",
+        "description": "Enhances mental clarity and focus",
+        "active": "Ginkgo biloba (24% flavonoids)"
+      },
+      "digestum": {
+        "name": "Digestum Complex",
+        "description": "Supports healthy digestion and gut function",
+        "active": "Fennel + Cumin standardized blend"
+      },
+      "sleep": {
+        "name": "Sleep Serenity",
+        "description": "Promotes restful sleep naturally",
+        "active": "Valerian root extract (0.8% valerenic acid)"
+      },
+      "skin": {
+        "name": "Skin Vitality",
+        "description": "Supports skin health and radiance from within",
+        "active": "Silybum marianum (70% silymarin)"
+      },
+      "vision": {
+        "name": "Vision Guard",
+        "description": "Protects and maintains eye health",
+        "active": "Bilberry extract + Lutein"
+      }
+    }
+  },
+  "WhyChoose": {
+    "badge": "Trust & Quality",
+    "title": {
+      "why": "Why Healthcare Professionals ",
+      "choose": "Choose BIOTERIK"
+    },
+    "reason1": {
+      "title": "Pharmaceutical Expertise",
+      "description": "Team of qualified pharmacists with deep knowledge of pharmacokinetics and clinical efficacy. Every formulation is designed to deliver real, measurable results."
+    },
+    "reason2": {
+      "title": "Transparent Formulas",
+      "description": "Every ingredient listed, every dosage precise. No proprietary blends, no hiding. Complete transparency so healthcare professionals can prescribe with confidence."
+    },
+    "reason3": {
+      "title": "European Standards",
+      "description": "Sourced from Indena. Manufacturing follows EU pharmaceutical guidelines. Every batch undergoes rigorous testing to meet the highest quality benchmarks."
+    }
+  },
+  "CTA": {
+    "title": {
+      "science": "Choose Science.",
+      "quality": "Choose Quality.",
+      "bioterik": "Choose BIOTERIK."
+    },
+    "description": "Whether you're a healthcare professional, distributor, or pharmacy, we're ready to partner with you. Pharmaceutical-grade supplements with scientific integrity.",
+    "getInTouch": "Get In Touch",
+    "callUs": "Call Us"
+  },
+  "Footer": {
+    "description": "Pharmaceutical-grade supplements crafted by pharmacists. Indena ingredients. European standards. Scientific integrity.",
+    "company": {
+      "title": "Company",
+      "links": {
+        "about": "About Us",
+        "approach": "Our Approach",
+        "products": "Products",
+        "research": "Research"
+      }
+    },
+    "partners": {
+      "title": "For Partners",
+      "links": {
+        "distributor": "Distributor Info",
+        "pharmacy": "Pharmacy Program",
+        "priceList": "Price List",
+        "documentation": "Documentation"
+      }
+    },
+    "contact": {
+      "title": "Contact",
+      "location": "Tashkent, Uzbekistan"
+    },
+    "bottom": {
+      "rights": "© {year} BIOTERIK PHARMA. All rights reserved.",
+      "tagline": "Pharmaceutical Quality, Every Product."
+    }
+  }
+}

@@ -1,6 +1,9 @@
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 export default function Hero() {
+  const t = useTranslations("Hero");
+
   return (
     <section className="grain-overlay relative min-h-screen flex items-center overflow-hidden bg-[var(--bg-primary)]">
       {/* ===== Animated gradient blobs ===== */}
@@ -160,23 +163,25 @@ export default function Hero() {
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-[#10b981]" />
               </span>
               <span className="text-sm font-medium text-[#34d399] tracking-wide">
-                Pharmaceutical Precision in Every Capsule
+                {t("badge")}
               </span>
             </div>
 
             {/* Headline — multi-line with size contrast */}
             <h1 className="mb-8">
               <span className="block font-serif text-[3rem] sm:text-[3.8rem] lg:text-[4.5rem] leading-[1.05] tracking-tight text-[var(--text-heading)]">
-                Pharmaceutical
+                {t("headline.pharmaceutical")}
               </span>
               <span className="block font-serif text-[3rem] sm:text-[3.8rem] lg:text-[4.5rem] leading-[1.05] tracking-tight">
                 <span className="bg-linear-to-r from-[#10b981] via-[#34d399] to-[#14b8a6] bg-clip-text text-transparent">
-                  Approach
+                  {t("headline.approach")}
                 </span>
-                <span className="text-[var(--text-heading)]"> to</span>
+                <span className="text-[var(--text-heading)]">
+                  {t("headline.to")}
+                </span>
               </span>
               <span className="block font-serif text-[3rem] sm:text-[3.8rem] lg:text-[4.5rem] leading-[1.05] tracking-tight text-[var(--text-heading)]">
-                Health
+                {t("headline.health")}
               </span>
             </h1>
 
@@ -187,7 +192,7 @@ export default function Hero() {
             >
               <div className="h-px w-12 bg-linear-to-r from-[#10b981] to-transparent" />
               <span className="text-[0.8rem] uppercase tracking-[0.3em] text-[var(--text-muted)] font-medium">
-                Indena Sourced · EU Standards
+                {t("heritageLabel")}
               </span>
             </div>
 
@@ -196,9 +201,7 @@ export default function Hero() {
               className="text-[1.1rem] lg:text-[1.2rem] leading-[1.85] text-[var(--text-body)] mb-12 max-w-[500px] mx-auto lg:mx-0"
               style={{ animation: "slide-up 1s ease-out 0.2s both" }}
             >
-              Products created by a team of pharmacists using standardized
-              extracts of the highest pharmaceutical quality. Proven efficacy.
-              Transparent formulas.
+              {t("description")}
             </p>
 
             {/* CTAs */}
@@ -210,7 +213,7 @@ export default function Hero() {
                 href="#products"
                 className="btn-primary group relative z-10 inline-flex items-center justify-center gap-3 rounded-full bg-linear-to-r from-[#10b981] to-[#0d9488] px-9 py-4 text-[0.95rem] font-semibold text-white shadow-[0_4px_30px_rgba(16,185,129,0.3)] transition-all duration-300 hover:shadow-[0_4px_50px_rgba(16,185,129,0.5)] hover:scale-[1.03] active:scale-[0.98]"
               >
-                Explore Products
+                {t("explore")}
                 <svg
                   className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1.5"
                   fill="none"
@@ -229,7 +232,7 @@ export default function Hero() {
                 href="#contact"
                 className="inline-flex items-center justify-center rounded-full border border-[var(--ghost-border)] px-9 py-4 text-[0.95rem] font-semibold text-[var(--ghost-text)] transition-all duration-300 hover:bg-[var(--ghost-bg-hover)] hover:border-[var(--ghost-border-hover)] hover:text-[var(--text-heading)]"
               >
-                Contact Us
+                {t("contact")}
               </Link>
             </div>
 
@@ -240,26 +243,29 @@ export default function Hero() {
             >
               <div className="text-center lg:text-left">
                 <div className="text-2xl lg:text-3xl font-bold text-[var(--text-heading)] mb-1">
-                  100<span className="text-[#10b981]">+</span>
+                  {t("statHeritage.value")}
+                  <span className="text-[#10b981]">+</span>
                 </div>
                 <div className="text-xs text-[var(--text-muted)] uppercase tracking-wider font-medium">
-                  Years Heritage
+                  {t("statHeritage.label")}
                 </div>
               </div>
               <div className="text-center lg:text-left border-l border-[var(--border-subtle)] pl-6">
                 <div className="text-2xl lg:text-3xl font-bold text-[var(--text-heading)] mb-1">
-                  8<span className="text-[#10b981]">+</span>
+                  {t("statProducts.value")}
+                  <span className="text-[#10b981]">+</span>
                 </div>
                 <div className="text-xs text-[var(--text-muted)] uppercase tracking-wider font-medium">
-                  Products
+                  {t("statProducts.label")}
                 </div>
               </div>
               <div className="text-center lg:text-left border-l border-[var(--border-subtle)] pl-6">
                 <div className="text-2xl lg:text-3xl font-bold text-[var(--text-heading)] mb-1">
-                  EU<span className="text-[#10b981]">✓</span>
+                  {t("statCertified.value")}
+                  <span className="text-[#10b981]">✓</span>
                 </div>
                 <div className="text-xs text-[var(--text-muted)] uppercase tracking-wider font-medium">
-                  Certified
+                  {t("statCertified.label")}
                 </div>
               </div>
             </div>
@@ -718,7 +724,7 @@ export default function Hero() {
         style={{ animation: "fade-in 1.5s ease-out 1s both" }}
       >
         <span className="text-[0.65rem] font-semibold uppercase tracking-[0.25em] text-[var(--text-whisper)]">
-          Scroll
+          {t("scroll")}
         </span>
         <div
           className="flex h-10 w-[22px] items-start justify-center rounded-full border border-[var(--ghost-border)] p-1.5"

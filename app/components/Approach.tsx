@@ -1,6 +1,9 @@
 import RevealOnScroll from "./RevealOnScroll";
+import { useTranslations } from "next-intl";
 
 export default function Approach() {
+  const t = useTranslations("Approach");
+
   return (
     <section
       id="approach"
@@ -18,44 +21,44 @@ export default function Approach() {
               <div className="inline-flex items-center gap-2.5 mb-8 rounded-full border border-[#10b981]/20 bg-[#10b981]/5 px-5 py-2">
                 <div className="h-1.5 w-1.5 rounded-full bg-[#10b981]" />
                 <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#34d399]">
-                  Our Philosophy
+                  {t("badge")}
                 </span>
               </div>
             </RevealOnScroll>
 
             <RevealOnScroll delay={100}>
               <h2 className="font-serif text-[2.5rem] sm:text-[3rem] lg:text-[3.5rem] leading-[1.1] tracking-tight text-[var(--text-heading)] mb-8">
-                Science-Driven{" "}
+                {t("title.science")}{" "}
                 <span className="bg-linear-to-r from-[#10b981] to-[#14b8a6] bg-clip-text text-transparent">
-                  Supplementation
+                  {t("title.supplementation")}
                 </span>
               </h2>
             </RevealOnScroll>
 
             <RevealOnScroll delay={200}>
               <p className="text-[1.05rem] lg:text-[1.1rem] leading-[1.85] text-[var(--text-body)] mb-8">
-                We are a pharmaceutical company dedicated to creating
-                supplements that actually work. Every product is formulated with
-                standardized, pharmaceutical-grade ingredients sourced directly
-                from{" "}
-                <span className="text-[var(--text-heading)] font-medium">
-                  Indena
-                </span>{" "}
-                — a trusted European manufacturer of standardized botanical
-                extracts.
+                {t.rich("description1.text", {
+                  indena: (chunks) => (
+                    <span className="text-[var(--text-heading)] font-medium">
+                      {chunks}
+                    </span>
+                  ),
+                })}
               </p>
             </RevealOnScroll>
 
             <RevealOnScroll delay={300}>
               <p className="text-[1.05rem] lg:text-[1.1rem] leading-[1.85] text-[var(--text-body)] mb-10">
-                Unlike conventional supplement companies, our team consists of{" "}
-                <span className="text-[var(--text-heading)] font-medium">
-                  qualified pharmacists
-                </span>{" "}
-                who understand pharmacokinetics, bioavailability, and clinical
-                efficacy. We don't create products based on trends — we create
-                them based on{" "}
-                <span className="text-[#34d399] font-medium">research</span>.
+                {t.rich("description2.text", {
+                  pharmacists: (chunks) => (
+                    <span className="text-[var(--text-heading)] font-medium">
+                      {chunks}
+                    </span>
+                  ),
+                  research: (chunks) => (
+                    <span className="text-[#34d399] font-medium">{chunks}</span>
+                  ),
+                })}
               </p>
             </RevealOnScroll>
 
@@ -63,7 +66,7 @@ export default function Approach() {
               <div className="flex items-center justify-center lg:justify-start gap-4">
                 <div className="h-px w-10 bg-[#10b981]/40" />
                 <span className="text-sm text-[var(--text-muted)] font-medium uppercase tracking-wider">
-                  Scientific Research & Quality Assurance
+                  {t("footer")}
                 </span>
               </div>
             </RevealOnScroll>

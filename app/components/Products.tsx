@@ -1,73 +1,76 @@
 import RevealOnScroll from "./RevealOnScroll";
-
-const products = [
-  {
-    name: "Cardio Naturalis",
-    description: "Supports healthy cholesterol and blood pressure levels",
-    active: "Standardized Hawthorn Extract",
-    dosage: "500mg",
-    color: "#ef4444",
-    icon: "❤️",
-  },
-  {
-    name: "Immunis Pro",
-    description: "Strengthens natural immune response",
-    active: "Echinacea purpurea (standardized)",
-    dosage: "400mg",
-    color: "#f59e0b",
-    icon: "🛡️",
-  },
-  {
-    name: "Articular Plus",
-    description: "Promotes joint flexibility and comfort",
-    active: "Boswellia serrata extract",
-    dosage: "600mg",
-    color: "#3b82f6",
-    icon: "🦴",
-  },
-  {
-    name: "Neuro Clarity",
-    description: "Enhances mental clarity and focus",
-    active: "Ginkgo biloba (24% flavonoids)",
-    dosage: "120mg",
-    color: "#8b5cf6",
-    icon: "🧠",
-  },
-  {
-    name: "Digestum Complex",
-    description: "Supports healthy digestion and gut function",
-    active: "Fennel + Cumin standardized blend",
-    dosage: "450mg",
-    color: "#10b981",
-    icon: "🌿",
-  },
-  {
-    name: "Sleep Serenity",
-    description: "Promotes restful sleep naturally",
-    active: "Valerian root extract (0.8% valerenic acid)",
-    dosage: "500mg",
-    color: "#6366f1",
-    icon: "🌙",
-  },
-  {
-    name: "Skin Vitality",
-    description: "Supports skin health and radiance from within",
-    active: "Silybum marianum (70% silymarin)",
-    dosage: "300mg",
-    color: "#ec4899",
-    icon: "✨",
-  },
-  {
-    name: "Vision Guard",
-    description: "Protects and maintains eye health",
-    active: "Bilberry extract + Lutein",
-    dosage: "250mg + 10mg",
-    color: "#14b8a6",
-    icon: "👁️",
-  },
-];
+import { useTranslations } from "next-intl";
 
 export default function Products() {
+  const t = useTranslations("Products");
+
+  const products = [
+    {
+      name: t("catalog.cardio.name"),
+      description: t("catalog.cardio.description"),
+      active: t("catalog.cardio.active"),
+      dosage: "500mg",
+      color: "#ef4444",
+      icon: "❤️",
+    },
+    {
+      name: t("catalog.immunis.name"),
+      description: t("catalog.immunis.description"),
+      active: t("catalog.immunis.active"),
+      dosage: "400mg",
+      color: "#f59e0b",
+      icon: "🛡️",
+    },
+    {
+      name: t("catalog.articular.name"),
+      description: t("catalog.articular.description"),
+      active: t("catalog.articular.active"),
+      dosage: "600mg",
+      color: "#3b82f6",
+      icon: "🦴",
+    },
+    {
+      name: t("catalog.neuro.name"),
+      description: t("catalog.neuro.description"),
+      active: t("catalog.neuro.active"),
+      dosage: "120mg",
+      color: "#8b5cf6",
+      icon: "🧠",
+    },
+    {
+      name: t("catalog.digestum.name"),
+      description: t("catalog.digestum.description"),
+      active: t("catalog.digestum.active"),
+      dosage: "450mg",
+      color: "#10b981",
+      icon: "🌿",
+    },
+    {
+      name: t("catalog.sleep.name"),
+      description: t("catalog.sleep.description"),
+      active: t("catalog.sleep.active"),
+      dosage: "500mg",
+      color: "#6366f1",
+      icon: "🌙",
+    },
+    {
+      name: t("catalog.skin.name"),
+      description: t("catalog.skin.description"),
+      active: t("catalog.skin.active"),
+      dosage: "300mg",
+      color: "#ec4899",
+      icon: "✨",
+    },
+    {
+      name: t("catalog.vision.name"),
+      description: t("catalog.vision.description"),
+      active: t("catalog.vision.active"),
+      dosage: "250mg + 10mg",
+      color: "#14b8a6",
+      icon: "👁️",
+    },
+  ];
+
   return (
     <section
       id="products"
@@ -80,14 +83,13 @@ export default function Products() {
       <div className="w-full max-w-[1280px] mx-auto px-8 md:px-12 lg:px-16">
         <RevealOnScroll className="text-center mb-20">
           <span className="text-xs font-semibold uppercase tracking-[0.25em] text-[#10b981] mb-4 block">
-            Product Catalog
+            {t("badge")}
           </span>
           <h2 className="font-serif text-[2.2rem] sm:text-[2.8rem] lg:text-[3.2rem] leading-[1.1] tracking-tight text-[var(--text-heading)] mb-6">
-            Our Product Line
+            {t("title")}
           </h2>
           <p className="text-[1rem] text-[var(--text-muted)] max-w-[520px] mx-auto leading-relaxed">
-            Comprehensive formulations designed for specific health areas, each
-            powered by Indena ingredients
+            {t("subtitle")}
           </p>
         </RevealOnScroll>
 
@@ -121,7 +123,7 @@ export default function Products() {
                 <div className="space-y-2">
                   <div className="flex items-center justify-between">
                     <span className="text-xs text-[var(--text-muted)] uppercase tracking-wider">
-                      Active
+                      {t("labels.active")}
                     </span>
                     <span
                       className="text-xs text-[var(--text-body)] font-medium text-right max-w-[60%] truncate"
@@ -132,7 +134,7 @@ export default function Products() {
                   </div>
                   <div className="flex items-center justify-between">
                     <span className="text-xs text-[var(--text-muted)] uppercase tracking-wider">
-                      Dosage
+                      {t("labels.dosage")}
                     </span>
                     <span className="text-sm text-[var(--text-heading)] font-semibold">
                       {product.dosage}

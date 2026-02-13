@@ -1,13 +1,16 @@
 import RevealOnScroll from "./RevealOnScroll";
-
-const features = [
-  { text: "Standardized to precise active compound specifications", icon: "◆" },
-  { text: "European pharmaceutical manufacturing standards", icon: "◆" },
-  { text: "Third-party tested for purity and potency", icon: "◆" },
-  { text: "Clinically documented bioavailability", icon: "◆" },
-];
+import { useTranslations } from "next-intl";
 
 export default function Indena() {
+  const t = useTranslations("Indena");
+
+  const features = [
+    { text: t("features.compound") },
+    { text: t("features.standards") },
+    { text: t("features.purity") },
+    { text: t("features.bioavailability") },
+  ];
+
   return (
     <section
       id="indena"
@@ -61,7 +64,7 @@ export default function Indena() {
                     </div>
                   </div>
                   <p className="text-sm text-[var(--text-muted)]">
-                    Milan, Italy · Est. 1921
+                    {t("location")}
                   </p>
                 </div>
 
@@ -69,35 +72,36 @@ export default function Indena() {
                 <div className="grid grid-cols-3 gap-6 mb-8 py-6 border-y border-[var(--border-card)]">
                   <div>
                     <div className="text-2xl font-bold text-[var(--text-heading)]">
-                      100<span className="text-[#10b981]">+</span>
+                      {t("stats.years.value")}
+                      <span className="text-[#10b981]">+</span>
                     </div>
                     <div className="text-xs text-[var(--text-muted)] uppercase tracking-wider mt-1">
-                      Years
+                      {t("stats.years.label")}
                     </div>
                   </div>
                   <div>
                     <div className="text-2xl font-bold text-[var(--text-heading)]">
-                      80<span className="text-[#10b981]">+</span>
+                      {t("stats.countries.value")}
+                      <span className="text-[#10b981]">+</span>
                     </div>
                     <div className="text-xs text-[var(--text-muted)] uppercase tracking-wider mt-1">
-                      Countries
+                      {t("stats.countries.label")}
                     </div>
                   </div>
                   <div>
                     <div className="text-2xl font-bold text-[var(--text-heading)]">
-                      EU<span className="text-[#10b981]">✓</span>
+                      {t("stats.gmp.value")}
+                      <span className="text-[#10b981]">✓</span>
                     </div>
                     <div className="text-xs text-[var(--text-muted)] uppercase tracking-wider mt-1">
-                      GMP
+                      {t("stats.gmp.label")}
                     </div>
                   </div>
                 </div>
 
                 {/* Quote */}
                 <p className="text-[0.95rem] text-[var(--text-body)] leading-relaxed italic border-l-2 border-[#10b981]/30 pl-4">
-                  &ldquo;Global leader in standardized botanical extracts,
-                  setting the international standard for quality in plant-based
-                  pharmaceuticals.&rdquo;
+                  &ldquo;{t("quote")}&rdquo;
                 </p>
               </div>
             </div>
@@ -107,21 +111,19 @@ export default function Indena() {
           <div className="flex-1 text-center lg:text-left">
             <RevealOnScroll delay={100}>
               <span className="text-xs font-semibold uppercase tracking-[0.25em] text-[#10b981] mb-4 block">
-                Premium Sourcing
+                {t("badge")}
               </span>
               <h2 className="font-serif text-[2.2rem] sm:text-[2.8rem] lg:text-[3.2rem] leading-[1.1] tracking-tight text-[var(--text-heading)] mb-8">
-                World-Class Ingredients{" "}
+                {t("title.worldClass")}{" "}
                 <span className="bg-linear-to-r from-[#10b981] to-[#14b8a6] bg-clip-text text-transparent">
-                  from Indena
+                  {t("title.fromIndena")}
                 </span>
               </h2>
             </RevealOnScroll>
 
             <RevealOnScroll delay={200}>
               <p className="text-[1.05rem] leading-[1.85] text-[var(--text-body)] mb-10">
-                Indena is a global leader in standardized botanical extracts.
-                For over 100 years, they&apos;ve set the international standard
-                for quality in plant-based pharmaceuticals.
+                {t("description")}
               </p>
             </RevealOnScroll>
 
@@ -156,11 +158,13 @@ export default function Indena() {
             <RevealOnScroll delay={600}>
               <div className="rounded-xl border border-[#10b981]/20 bg-[#10b981]/5 px-6 py-4">
                 <p className="text-[0.9rem] text-[#34d399] font-medium leading-relaxed">
-                  Every BIOTERIK product contains Indena-sourced ingredients.
-                  This is not negotiable.{" "}
-                  <span className="text-[var(--text-heading)]">
-                    Quality is non-negotiable.
-                  </span>
+                  {t.rich("note", {
+                    bold: (chunks) => (
+                      <span className="text-[var(--text-heading)]">
+                        {chunks}
+                      </span>
+                    ),
+                  })}
                 </p>
               </div>
             </RevealOnScroll>

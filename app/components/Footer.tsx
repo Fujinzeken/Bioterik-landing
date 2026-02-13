@@ -1,20 +1,23 @@
 import Link from "next/link";
-
-const companyLinks = [
-  { label: "About Us", href: "#approach" },
-  { label: "Our Approach", href: "#approach" },
-  { label: "Products", href: "#products" },
-  { label: "Research", href: "#indena" },
-];
-
-const partnerLinks = [
-  { label: "Distributor Info", href: "#contact" },
-  { label: "Pharmacy Program", href: "#contact" },
-  { label: "Price List", href: "#contact" },
-  { label: "Documentation", href: "#contact" },
-];
+import { useTranslations } from "next-intl";
 
 export default function Footer() {
+  const t = useTranslations("Footer");
+
+  const companyLinks = [
+    { label: t("company.links.about"), href: "#approach" },
+    { label: t("company.links.approach"), href: "#approach" },
+    { label: t("company.links.products"), href: "#products" },
+    { label: t("company.links.research"), href: "#indena" },
+  ];
+
+  const partnerLinks = [
+    { label: t("partners.links.distributor"), href: "#contact" },
+    { label: t("partners.links.pharmacy"), href: "#contact" },
+    { label: t("partners.links.priceList"), href: "#contact" },
+    { label: t("partners.links.documentation"), href: "#contact" },
+  ];
+
   return (
     <footer className="relative bg-[#060a15] pt-20 pb-8 overflow-hidden">
       {/* Top separator */}
@@ -52,15 +55,14 @@ export default function Footer() {
               </span>
             </Link>
             <p className="text-sm text-[#6b7280] leading-relaxed max-w-[280px]">
-              Pharmaceutical-grade supplements crafted by pharmacists. Indena
-              ingredients. European standards. Scientific integrity.
+              {t("description")}
             </p>
           </div>
 
           {/* Company links */}
           <div>
             <h4 className="text-sm font-semibold text-white uppercase tracking-wider mb-5">
-              Company
+              {t("company.title")}
             </h4>
             <ul className="space-y-3">
               {companyLinks.map((link) => (
@@ -79,7 +81,7 @@ export default function Footer() {
           {/* Partner links */}
           <div>
             <h4 className="text-sm font-semibold text-white uppercase tracking-wider mb-5">
-              For Partners
+              {t("partners.title")}
             </h4>
             <ul className="space-y-3">
               {partnerLinks.map((link) => (
@@ -98,7 +100,7 @@ export default function Footer() {
           {/* Contact */}
           <div>
             <h4 className="text-sm font-semibold text-white uppercase tracking-wider mb-5">
-              Contact
+              {t("contact.title")}
             </h4>
             <ul className="space-y-4">
               <li>
@@ -162,7 +164,7 @@ export default function Footer() {
                     d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
                   />
                 </svg>
-                Tashkent, Uzbekistan
+                {t("contact.location")}
               </li>
             </ul>
           </div>
@@ -171,11 +173,9 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="border-t border-white/[0.06] pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-[#4b5563]">
-            © {new Date().getFullYear()} BIOTERIK PHARMA. All rights reserved.
+            {t("bottom.rights", { year: new Date().getFullYear() })}
           </p>
-          <p className="text-xs text-[#4b5563]">
-            Pharmaceutical Quality, Every Product.
-          </p>
+          <p className="text-xs text-[#4b5563]">{t("bottom.tagline")}</p>
         </div>
       </div>
     </footer>

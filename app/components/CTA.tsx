@@ -1,7 +1,10 @@
 import Link from "next/link";
 import RevealOnScroll from "./RevealOnScroll";
+import { useTranslations } from "next-intl";
 
 export default function CTA() {
+  const t = useTranslations("CTA");
+
   return (
     <section
       id="contact"
@@ -26,19 +29,17 @@ export default function CTA() {
 
           <RevealOnScroll>
             <h2 className="relative font-serif text-[2rem] sm:text-[2.5rem] lg:text-[3.5rem] leading-[1.1] tracking-tight text-[var(--text-heading)] mb-8 max-w-[700px] mx-auto">
-              Choose Science.{" "}
+              {t("title.science")}{" "}
               <span className="bg-linear-to-r from-[#10b981] to-[#14b8a6] bg-clip-text text-transparent">
-                Choose Quality.
+                {t("title.quality")}
               </span>{" "}
-              Choose BIOTERIK.
+              {t("title.bioterik")}
             </h2>
           </RevealOnScroll>
 
           <RevealOnScroll delay={150}>
             <p className="relative text-[1.05rem] lg:text-[1.15rem] text-[var(--text-body)] leading-[1.8] max-w-[560px] mx-auto mb-12">
-              Whether you&apos;re a healthcare professional, distributor, or
-              pharmacy, we&apos;re ready to partner with you.
-              Pharmaceutical-grade supplements with scientific integrity.
+              {t("description")}
             </p>
           </RevealOnScroll>
 
@@ -48,7 +49,7 @@ export default function CTA() {
                 href="mailto:info@bioterik-pharma.uz"
                 className="btn-primary group relative z-10 inline-flex items-center justify-center gap-3 rounded-full bg-linear-to-r from-[#10b981] to-[#0d9488] px-10 py-4.5 text-[1rem] font-semibold text-white shadow-[0_4px_30px_rgba(16,185,129,0.3)] transition-all duration-300 hover:shadow-[0_4px_50px_rgba(16,185,129,0.5)] hover:scale-[1.03] active:scale-[0.98]"
               >
-                Get In Touch
+                {t("getInTouch")}
                 <svg
                   className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1"
                   fill="none"
@@ -80,7 +81,7 @@ export default function CTA() {
                     d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
                   />
                 </svg>
-                Call Us
+                {t("callUs")}
               </Link>
             </div>
           </RevealOnScroll>

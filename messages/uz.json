@@ -1,0 +1,221 @@
+{
+  "Metadata": {
+    "title": "BIOTERIK PHARMA | Indena tarkibiy qismlari bilan farmatsevtik qo'shimchalar",
+    "description": "Indena tarkibiy qismlari bilan ilmiy asoslangan qo'shimchalar. Eng yuqori farmatsevtika sifatidagi standartlashtirilgan ekstraktlardan foydalangan holda farmatsevtlar jamoasi tomonidan yaratilgan mahsulotlar. Isbotlangan samaradorlik. Shaffof formulalar.",
+    "keywords": "farmatsevtik qo'shimchalar, Indena tarkibiy qismlari, standartlashtirilgan ekstraktlar, BIOTERIK, farmatsevtlar tomonidan ishlab chiqilgan, bioavailability",
+    "ogTitle": "BIOTERIK PHARMA | Indena tarkibiy qismlari bilan farmatsevtik qo'shimchalar",
+    "ogDescription": "Indena tarkibiy qismlari bilan ilmiy asoslangan qo'shimchalar. Tibbiyot mutaxassislari ishonchi."
+  },
+  "Navbar": {
+    "approach": "Bizning yondashuvimiz",
+    "sources": "Premium manbalar",
+    "products": "Mahsulotlar",
+    "contact": "Kontaktlar",
+    "getInTouch": "Bog'lanish",
+    "switchLight": "Yorug' rejimga o'tish",
+    "switchDark": "Qorong'i rejimga o'tish",
+    "toggleMenu": "Menyuni almashtirish",
+    "closeMenu": "Menyuni yopish"
+  },
+  "Hero": {
+    "badge": "Har bir kapsulada farmatsevtik aniqlik",
+    "headline": {
+      "pharmaceutical": "Sog'liqqa",
+      "approach": "farmatsevtik",
+      "to": " ",
+      "health": "yondashuv"
+    },
+    "heritageLabel": "Indena manbalari · Yevropa standartlari",
+    "description": "Eng yuqori farmatsevtika sifatidagi standartlashtirilgan ekstraktlardan foydalangan holda farmatsevtlar jamoasi tomonidan yaratilgan mahsulotlar. Isbotlangan samaradorlik. Shaffof formulalar.",
+    "explore": "Mahsulotlarni o'rganish",
+    "contact": "Biz bilan bog'laning",
+    "statHeritage": {
+      "value": "100",
+      "label": "Yillik meros"
+    },
+    "statProducts": {
+      "value": "8",
+      "label": "Mahsulotlar"
+    },
+    "statCertified": {
+      "value": "Yevropa",
+      "label": "Sertifikatlangan"
+    },
+    "scroll": "Pastga"
+  },
+  "Approach": {
+    "badge": "Bizning falsafamiz",
+    "title": {
+      "science": "Ilm-fanga asoslangan",
+      "supplementation": "qo'shimchalar"
+    },
+    "description1": {
+      "text": "Biz haqiqatan ham ishlaydigan qo'shimchalarni yaratishga bag'ishlangan farmatsevtika kompaniyasidirmiz. Har bir mahsulot standartlashtirilgan o'simlik ekstraktlarining ishonchli Yevropa ishlab chiqaruvchisi bo'lgan <indena>Indena</indena>dan to'g'ridan-to'g'ri olingan standartlashtirilgan, farmatsevtika darajasidagi ingredientlar bilan ishlab chiqilgan."
+    },
+    "description2": {
+      "text": "Oddiy qo'shimchalar ishlab chiqaradigan kompaniyalardan farqli o'laroq, bizning jamoamiz farmakokinetika, bioavailability va klinik samaradorlikni tushunadigan <pharmacists>malakali farmatsevtlar</pharmacists>dan iborat. Biz mahsulotlarni tendentsiyalar asosida emas, balki <research>tadqiqotlar</research> asosida yaratamiz."
+    },
+    "footer": "Ilmiy tadqiqotlar va sifat kafolati"
+  },
+  "Pillars": {
+    "badge": "Bizni nima ajratib turadi",
+    "title": "Bizning farmatsevtik yondashuvimiz",
+    "subtitle": "Bizni oddiy qo'shimcha ishlab chiqaruvchilardan ajratib turadigan to'rtta ustun",
+    "pillar1": {
+      "title": "Standartlashtirilgan ekstraktlar",
+      "description": "Har bir partiyada barqaror samaradorlik uchun aniq miqdordagi faol birikmalar"
+    },
+    "pillar2": {
+      "title": "Ilmiy asos",
+      "description": "Har bir formula taqriz qilingan tadqiqotlar va klinik ma'lumotlar bilan tasdiqlangan"
+    },
+    "pillar3": {
+      "title": "Optimal bioavailability",
+      "description": "Maksimal terapevtik foyda uchun organizm tomonidan yaxshilangan so'rilish va foydalanish"
+    },
+    "pillar4": {
+      "title": "Qat'iy nazorat",
+      "description": "Ko'p bosqichli sinovlar har bir qadamda tozalik, quvvat va xavfsizlikni ta'minlaydi"
+    }
+  },
+  "Indena": {
+    "location": "Milan, Italiya · 1921-yilda asos solingan",
+    "stats": {
+      "years": {
+        "value": "100",
+        "label": "Yillar"
+      },
+      "countries": {
+        "value": "80",
+        "label": "Davlatlar"
+      },
+      "gmp": {
+        "value": "Yevropa",
+        "label": "GMP"
+      }
+    },
+    "badge": "Premium manbalar",
+    "title": {
+      "worldClass": "Indenadan jahon darajasidagi ",
+      "fromIndena": "ingredientlar"
+    },
+    "description": "Indena standartlashtirilgan o’simlik ekstraktlari bo’yicha jahon yetakchisidir. 100 yildan ortiq vaqt davomida ular o’simlik asosidagi farmatsevtika preparatlari sifati bo’yicha xalqaro standartni belgilab keldilar.",
+    "quote": "O'simlik dori vositalarida sifat bo'yicha xalqaro standartni belgilovchi standartlashtirilgan o'simlik ekstraktlari bo'yicha jahon yetakchisi.",
+    "features": {
+      "compound": "Aniq faol birikma xususiyatlariga standartlashtirilgan",
+      "standards": "Yevropa farmatsevtika ishlab chiqarish standartlari",
+      "purity": "Tozalik va quvvat uchun uchinchi tomon tomonidan sinovdan o'tkazilgan",
+      "bioavailability": "Klinik hujjatlashtirilgan bioavailability"
+    },
+    "note": "Har bir BIOTERIK mahsulotida Indenadan olingan ingredientlar mavjud. Bu muhokama qilinmaydi. <bold>Sifat muhokama qilinmaydi.</bold>"
+  },
+  "Products": {
+    "badge": "Mahsulotlar katalogi",
+    "title": "Mahsulotlar qatorimiz",
+    "subtitle": "Maxsus sog'liqni saqlash sohalari uchun ishlab chiqilgan kompleks formulalar, ularning har biri Indena ingredientlari bilan quvvatlangan",
+    "labels": {
+      "active": "Faol modda",
+      "dosage": "Dozirovka"
+    },
+    "catalog": {
+      "cardio": {
+        "name": "Cardio Naturalis",
+        "active": "Standartlashtirilgan do'lana ekstrakti",
+        "description": "Sog'lom xolesterin va qon bosimi darajasini qo'llab-quvvatlaydi"
+      },
+      "immunis": {
+        "name": "Immunis Pro",
+        "active": "Echinacea purpurea (standartlashtirilgan)",
+        "description": "Tabiiy immun javobini kuchaytiradi"
+      },
+      "articular": {
+        "name": "Articular Plus",
+        "active": "Boswellia serrata ekstrakti",
+        "description": "Bo'g'imlarning egiluvchanligi va qulayligini ta'minlaydi"
+      },
+      "neuro": {
+        "name": "Neuro Clarity",
+        "active": "Ginkgo biloba (24% flavonoidlar)",
+        "description": "Aqliy tiniqlik va diqqatni jamlashni kuchaytiradi"
+      },
+      "digestum": {
+        "name": "Digestum Complex",
+        "active": "Fenxel + Kumin standartlashtirilgan aralashmasi",
+        "description": "Sog'lom hazm qilish va ichak faoliyatini qo'llab-quvvatlaydi"
+      },
+      "sleep": {
+        "name": "Sleep Serenity",
+        "active": "Valeriana ildizi ekstrakti (0,8% valeren kislotasi)",
+        "description": "Tabiiy va xotirjam uyquni ta'minlaydi"
+      },
+      "skin": {
+        "name": "Skin Vitality",
+        "active": "Silybum marianum (70% silymarin)",
+        "description": "Teri salomatligi va yorqinligini ichkaridan qo'llab-quvvatlaydi"
+      },
+      "vision": {
+        "name": "Vision Guard",
+        "active": "Qora qat (chernika) ekstrakti + Lyutein",
+        "description": "Ko'z salomatligini himoya qiladi va saqlaydi"
+      }
+    }
+  },
+  "WhyChoose": {
+    "badge": "Ishonch va sifat",
+    "title": {
+      "why": "Nima uchun tibbiyot mutaxassislari ",
+      "choose": "BIOTERIKni tanlaydi"
+    },
+    "reason1": {
+      "title": "Farmatsevtika tajribasi",
+      "description": "Farmakokinetika va klinik samaradorlik bo'yicha chuqur bilimga ega bo'lgan malakali farmatsevtlar jamoasi. Har bir formula haqiqiy, o'lchanadigan natijalarni berish uchun ishlab chiqilgan."
+    },
+    "reason2": {
+      "title": "Shaffof formulalar",
+      "description": "Har bir ingredient ko'rsatilgan, har bir doza aniq. Hech qanday \"maxfiy aralashmalar\" yo'q. To'liq shaffoflik, shunda tibbiyot mutaxassislari ishonch bilan tavsiya qilishlari mumkin."
+    },
+    "reason3": {
+      "title": "Yevropa standartlari",
+      "description": "Indenadan olingan manbalar. Ishlab chiqarish Yevropa Ittifoqining farmatsevtika bo’yicha ko’rsatmalariga amal qiladi. Har bir partiya eng yuqori sifat mezonlariga javob berish uchun qat'iy sinovdan o'tkaziladi."
+    }
+  },
+  "CTA": {
+    "title": {
+      "science": "Ilm-fanni tanlang.",
+      "quality": "Sifatni tanlang.",
+      "bioterik": "BIOTERIKni tanlang."
+    },
+    "description": "Agar siz tibbiyot xodimi, distribyutor yoki dorixona vakili bo'lsangiz, biz siz bilan hamkorlik qilishga tayyormiz. Ilmiy yaxlitlikka ega farmatsevtika darajasidagi qo'shimchalar.",
+    "getInTouch": "Bog'lanish",
+    "callUs": "Bizga qo'ng'iroq qiling"
+  },
+  "Footer": {
+    "description": "Farmatsevtlar tomonidan ishlab chiqilgan farmatsevtika darajasidagi qo'shimchalar. Indena ingredientlari. Yevropa standartlari. Ilmiy yaxlitlik.",
+    "company": {
+      "title": "Kompaniya",
+      "links": {
+        "about": "Biz haqimizda",
+        "approach": "Bizning yondashuvimiz",
+        "products": "Mahsulotlar",
+        "research": "Tadqiqotlar"
+      }
+    },
+    "partners": {
+      "title": "Hamkorlar uchun",
+      "links": {
+        "distributor": "Distribyutor haqida ma'lumot",
+        "pharmacy": "Dorixona dasturi",
+        "priceList": "Narxlar ro'yxati",
+        "documentation": "Hujjatlar"
+      }
+    },
+    "contact": {
+      "title": "Kontakt",
+      "location": "Toshkent, O'zbekiston"
+    },
+    "bottom": {
+      "rights": "© {year} BIOTERIK PHARMA. Barcha huquqlar himoyalangan.",
+      "tagline": "Farmatsevtika sifati, har bir mahsulotda."
+    }
+  }
+}
