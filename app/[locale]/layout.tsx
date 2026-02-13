@@ -47,6 +47,27 @@ export async function generateMetadata({
       title: t("ogTitle"),
       description: t("ogDescription"),
       type: "website",
+      images: [
+        {
+          url: "https://bioterik.netlify.app/og-image.png",
+          width: 1200,
+          height: 630,
+          alt: "Open Graph Image",
+        },
+      ],
+    },
+    twitter: {
+      title: t("ogTitle"),
+      description: t("ogDescription"),
+      card: "summary_large_image",
+      images: [
+        {
+          url: "https://bioterik.netlify.app/og-image.png",
+          width: 1200,
+          height: 630,
+          alt: "Open Graph Image",
+        },
+      ],
     },
   };
 }
